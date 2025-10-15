@@ -20,7 +20,8 @@ export default function FileUpload({ onUpload }) {
       textAlign: "center",
       marginTop: "20px",
       borderRadius: "10px",
-      backgroundColor: isDragActive ? "#e9f5ff" : "#fff"
+      backgroundColor: isDragActive ? "#e9f5ff" : "#fff",
+      color: isDragActive ? "black" : "black",
     }}>
       <input {...getInputProps()} />
       {isDragActive ? <p>Drop the files here ...</p> : <p>Drag & drop files or click to upload</p>}
